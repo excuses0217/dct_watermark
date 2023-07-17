@@ -7,7 +7,7 @@
 
 ![backgrd](dct_test/backgrd.png)
 
-![githubmark240-135](dct_test\githubmark240-135.png)
+![githubmark240-135](dct_test/githubmark240-135.png)
 
 选取嵌入强度α=15，分块大小为8×8。嵌入水印后效果图如下：
 
