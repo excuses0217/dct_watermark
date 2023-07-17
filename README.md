@@ -5,17 +5,17 @@
 
 选取1920×1080的RGB彩色电影壁纸（图3.1）作为载体图像，以及240×135的二值图像作为嵌入的水印图案
 
-![backgrd](dct_test\backgrd.png)
+![backgrd](dct_test/backgrd.png)
 
 ![githubmark240-135](dct_test\githubmark240-135.png)
 
 选取嵌入强度$\alpha=15$，分块大小为8×8。嵌入水印后效果图如下：
 
-![alpha=15](img\alpha=15.png)
+![alpha=15](img/alpha=15.png)
 
 提取出的水印如下
 
-![alpha=15_watermark](img\alpha=15_watermark.png)
+![alpha=15_watermark](img/alpha=15_watermark.png)
 
 基于DCT的数字水印的中心思想就是通过DCT变换对图像块进行处理后，然后选择变换域中的一些系数值，再根据一些特定规则来将水印嵌入其中。当我们将载体图像DCT分块后，每一个图像块的DCT系数频值带分布由左上往右下的系数频率逐渐升高，所以选取一个适合的中频系数来做信息隐藏（水印）。由于图像块量化后能够将水印信息比较均匀地分布在图像的空间域内，整体水印效果较好，对图像的破坏性较小，仅在浅色与深色区域相比于原图有一些失真。
 
